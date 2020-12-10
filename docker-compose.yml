@@ -1,0 +1,34 @@
+version: '3'
+services: 
+  node:
+    #build: ./node-red/.
+    restart: always
+    image: nodered/node-red
+    container_name: mynodered
+    ports: 
+      - '1880:1880'
+    volumes: 
+      - ./node-red:/data
+    networks: 
+      - default
+      #- node-red_default
+  
+  mqtt:
+    #build: ./mqtt/.
+    restart: always
+    image: eclipse-mosquitto
+    container_name: local-mosquitto
+    ports: 
+      - '1883:1883'
+    networks: 
+      - default
+      #- node-red_default
+
+#networks: 
+#  node-red_default:
+#    driver: bridge
+
+
+    
+  
+
