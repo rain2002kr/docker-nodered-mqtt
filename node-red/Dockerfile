@@ -1,2 +1,2 @@
-FROM nodered/node-red-docker
+FROM nodered/node-red
 
