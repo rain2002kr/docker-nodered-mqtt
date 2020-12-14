@@ -1,2 +1,1 @@
 FROM nodered/node-red
-

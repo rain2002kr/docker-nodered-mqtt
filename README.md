@@ -6,5 +6,10 @@
 
     links 
         user can be connected by name, it is like port forwards 
-        
+
+    add
+        gitignore
+        dockerignore 
+        node-red shuld be deleted the other file without Dockerfile
+                
         
